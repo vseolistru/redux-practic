@@ -37,7 +37,7 @@ const todos = (state=[], action) => {
             return state.filter(item=>(item.id !== action.id))
         }
 
-        case 'ADD_TODOS': {
+        case 'RESET': {
             return state.map((item)=>
                 item.id === action.id ? {...item, completed: !item.completed}: item)
         }
@@ -48,7 +48,8 @@ const todos = (state=[], action) => {
     }
 }
 
-export const store = createStore( todos)
+export const store = createStore( todos,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 
 export const increment = {type: 'INCREMENT'}
@@ -62,5 +63,5 @@ export const removeTodos = (id) => ({
     type:'REMOVE_TODO', id
 })
 export const toggleTodos = (id) => ({
-    type:'ADD_TODOS', id
+    type:'RESET', id
 })
