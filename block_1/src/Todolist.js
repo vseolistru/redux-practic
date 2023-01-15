@@ -1,9 +1,9 @@
 import React from 'react';
-import {addTodos, removeTodos, toggleTodos} from "./store";
+import {addTodos, removeTodos, toggleTodos} from ".//store/actions/todos-actions";
 import {useDispatch, useSelector} from "react-redux";
 
 const Todolist = () => {
-    const todos = useSelector(state => state)
+    const todos = useSelector(state => state.todos)
     const dispatch = useDispatch()
     const handleSubmit = (e) => {
         e.preventDefault()
