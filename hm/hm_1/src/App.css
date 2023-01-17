@@ -1,0 +1,263 @@
+
+@media (min-width: 320px) {
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../public/images/bg-intro-mobile.png);
+    background-color: #FF7978;
+    min-height: 100vh;
+    font-weight: bold;
+    color: white;
+    font-size: calc(24px + 2vmin);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .App header {
+    margin: 80px 15px;
+    display: block;
+    max-width: 400px;
+  }
+  .App p {
+    font-weight: normal;
+    font-size: 14px;
+    margin: 15px 0 105px 0;
+  }
+  .form__container {
+    position: relative;
+    max-width: 350px;
+    background: #eef6f6;
+    max-height: 420px;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+
+  .form__container label {
+    font-size: 13px;
+    width: 312px;
+    height: 48px;
+    background-color: #5D54A3;
+    border-radius: 10px;
+    padding: 19px;
+    position: absolute;
+    left: 0;
+    top: -110px;
+    box-shadow: 0 7px rgba(39, 45, 45, 0.36);
+  }
+
+  .form__inputs input {
+    flex-direction: column;
+    width: 310px;
+    height: 38px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #556b6b;
+  }
+  .form__inputs button {
+    width: 310px;
+    height: 46px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #37CC8A;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .form__inputs p {
+    font-size: 10px;
+    color: #282c34;
+    opacity: 0.4;
+  }
+  .form__inputs span {
+    color: #a60000;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 900px) {
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../public/images/bg-intro-desktop.png);
+    background-color: #FF7978;
+    min-height: 100vh;
+    font-weight: bold;
+    color: white;
+    font-size: calc(22px + 2vmin);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .App p {
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  .App header {
+    display: block;
+    max-width: 400px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .form__container {
+    position: relative;
+    margin-right: 240px;
+    max-width: 400px;
+    background: #eef6f6;
+    max-height: 520px;
+    border-radius: 10px;
+    padding: 20px 0;
+  }
+
+  .form__container label {
+    display: inline-block;
+    font-size: 14px;
+    width: 400px;
+    background-color: #5D54A3;
+    border-radius: 10px;
+    padding: 19px 0;
+    position: absolute;
+    left: 0;
+    top: -110px;
+    box-shadow: 0 7px rgba(39, 45, 45, 0.36);
+  }
+
+  .form__inputs input {
+    flex-direction: column;
+    width: 300px;
+    height: 48px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #252020;
+    font-size: 16px;
+  }
+
+  input:invalid {
+    content: '*Required';
+  }
+
+  .form__inputs button {
+    width: 306px;
+    height: 52px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #37CC8A;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .form__inputs p {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #282c34;
+    opacity: 0.4;
+  }
+  .form__inputs span {
+    color: #a60000;
+    font-weight: bold;
+  }
+
+}
+
+@media (min-width: 1268px) {
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../public/images/bg-intro-desktop.png);
+    background-color: #FF7978;
+    min-height: 100vh;
+    font-weight: bold;
+    color: white;
+    font-size: calc(26px + 2vmin);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .App p {
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .App header {
+    display: block;
+    max-width: 400px;
+    margin-left: 220px;
+    margin-bottom: 60px;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .form__container {
+    position: relative;
+    margin-right: 240px;
+    max-width: 520px;
+    background: #eef6f6;
+    max-height: 520px;
+    border-radius: 10px;
+    padding: 20px 0;
+  }
+
+  .form__container label {
+    display: inline-block;
+    font-size: 14px;
+    width: 520px;
+    background-color: #5D54A3;
+    border-radius: 10px;
+    padding: 19px 0;
+    position: absolute;
+    left: 0;
+    top: -110px;
+    box-shadow: 0 7px rgba(39, 45, 45, 0.36);
+  }
+
+  .form__inputs input {
+    flex-direction: column;
+    width: 420px;
+    height: 48px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #252020;
+    font-size: 16px;
+  }
+
+  input:invalid {
+    content: '*Required';
+  }
+
+  .form__inputs button {
+    width: 426px;
+    height: 52px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #37CC8A;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .form__inputs p {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #282c34;
+    opacity: 0.4;
+  }
+  .form__inputs span {
+    color: #a60000;
+    font-weight: bold;
+  }
+}
+
+
+
