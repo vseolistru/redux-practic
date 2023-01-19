@@ -5,7 +5,7 @@ import {fetchUser} from "./store/action";
 function App() {
     const values = useSelector(state => state)
     const dispatch = useDispatch()
-
+    console.log(values)
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(fetchUser(
@@ -41,7 +41,6 @@ function App() {
                      </p>
                  </form>
              </div>
-
          </div>
     );
 }

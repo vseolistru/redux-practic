@@ -6,14 +6,16 @@ import {selectActiveTodos, selectVisibleTodos} from '../store/selector'
 
 
 const Todolist = () => {
+
     const activeFilter = useSelector(selectActiveTodos)
     const todos = useSelector(state => selectVisibleTodos(state, activeFilter))
     const dispatch = useDispatch()
-    const handleSubmit = (e) =>
+    const handleSubmit = (e) =>{
         e.preventDefault()
-        dispatch(addTodos(e.target.title.value))
-        e.target.reset()
+    dispatch(addTodos(e.target.title.value))
+    e.target.reset()
     }
+
     const handleDelete = (id) => {
         dispatch(removeTodos(id))
     }
@@ -35,6 +37,6 @@ const Todolist = () => {
                 ))}
             </ul>
         </>
-    )
+    );
 }
 export default Todolist;

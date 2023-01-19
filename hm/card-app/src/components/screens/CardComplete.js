@@ -1,5 +1,4 @@
 import React from 'react';
-import iconComplete from '../../assets/icon-complete.svg'
 import {useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
 import CompeteCard from "./CompeteCard";
@@ -14,7 +13,7 @@ const CardComplete = () => {
         <>
             <div className='card__left_side'></div>
             <form className='card__card_form'>
-                <img src={iconComplete} alt={iconComplete}/>
+                <img/>
                 <div className='card__form_date_expired'>
                     <p>
                         Thank You!
